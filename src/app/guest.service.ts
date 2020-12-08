@@ -8,7 +8,6 @@ import { Guest } from './guest.model';
   providedIn: 'root'
 })
 export class GuestService {
-
   private guestSource = new BehaviorSubject<Guest[]>(null);
   guests$ = this.guestSource.asObservable();
   private guests = [

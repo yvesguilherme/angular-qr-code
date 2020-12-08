@@ -70,7 +70,7 @@ export class ScannerComponent implements OnInit {
     }, 3000);
   }
 
-  //This function check if the QR code has a valid JSON as data
+  // This function check if the QR code has a valid JSON as data
   checkQRJSON(qrString: string): boolean {
     if (
       /^[\],:{}\s]*$/.test(
