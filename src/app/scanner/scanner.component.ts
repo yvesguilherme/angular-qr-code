@@ -11,9 +11,8 @@ import { GuestService } from '../guest.service';
   styleUrls: ['./scanner.component.scss']
 })
 export class ScannerComponent implements OnInit {
-
   availableDevices: MediaDeviceInfo[];
-  currentDevice: MediaDeviceInfo;
+  currentDevice: MediaDeviceInfo = null;
   hasDevices: boolean;
   hasPermission: boolean;
   qrResult: Guest;
@@ -21,10 +20,9 @@ export class ScannerComponent implements OnInit {
 
   constructor(private guestService: GuestService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  // Clears the QR Code scanned
+  // Clears the QR code scanned
   clearResult(): void {
     this.qrResult = null;
   }
@@ -51,11 +49,11 @@ export class ScannerComponent implements OnInit {
   checkInGuest(guestQR: Guest): void {
     this.guestService.guests$
       .pipe(
-        map((guests: any) =>
+        map(guests =>
           guests.find((guest: Guest) => guest.id === guestQR.id)
         )
       )
-      .subscribe((guest: any) => {
+      .subscribe(guest => {
         if (guest !== null && guest !== undefined) {
           this.guestExist = true;
         } else {
@@ -66,23 +64,23 @@ export class ScannerComponent implements OnInit {
       });
   }
 
-  clearMessage(): void {
+  clearMessage() {
     setTimeout(() => {
       this.guestExist = null;
     }, 3000);
   }
 
-  // This function check if the QR code has a valid JSON as data
+  //This function check if the QR code has a valid JSON as data
   checkQRJSON(qrString: string): boolean {
     if (
       /^[\],:{}\s]*$/.test(
         qrString
-          .replace(/\\["\\\/bfnrtu]/g, '@')
+          .replace(/\\["\\\/bfnrtu]/g, "@")
           .replace(
             /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,
-            ']'
+            "]"
           )
-          .replace(/(?:^|:|,)(?:\s*\[)+/g, '')
+          .replace(/(?:^|:|,)(?:\s*\[)+/g, "")
       )
     ) {
       return true;
@@ -90,5 +88,4 @@ export class ScannerComponent implements OnInit {
       return false;
     }
   }
-
 }
