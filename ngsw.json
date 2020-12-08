@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1607391257360,
+  "timestamp": 1607392021259,
   "index": "/angular-qr-code/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/angular-qr-code/favicon.ico",
         "/angular-qr-code/index.html",
-        "/angular-qr-code/main.1e8d0b51e9464b0be7e4.js",
+        "/angular-qr-code/main.8f4135a89c25b8ae93d7.js",
         "/angular-qr-code/manifest.webmanifest",
         "/angular-qr-code/polyfills.bf99d438b005d57b2b31.js",
         "/angular-qr-code/runtime.359d5ee4682f20e936e9.js",
@@ -52,8 +52,8 @@
     "/angular-qr-code/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/angular-qr-code/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/angular-qr-code/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/angular-qr-code/index.html": "b59b6f348f9a656414f21cb86a5bf31c683fb441",
-    "/angular-qr-code/main.1e8d0b51e9464b0be7e4.js": "04ccac234aba36cf2135146e43b3daf882c91d1f",
+    "/angular-qr-code/index.html": "dfcec23afbe78def08992a6a8683ee2ed131d8ee",
+    "/angular-qr-code/main.8f4135a89c25b8ae93d7.js": "c510f9e09bc55d480c762ccb0ad86d2b0d107e7f",
     "/angular-qr-code/manifest.webmanifest": "9304941f0ef4525b14b7005a695d37f695f4d52b",
     "/angular-qr-code/polyfills.bf99d438b005d57b2b31.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/angular-qr-code/runtime.359d5ee4682f20e936e9.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
